@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расчет сложного процента</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./img/icons8-мешок-с-шекелями-16.png"
+    />
+    <link rel="stylesheet" href="./css/css.css" />
+  </head>
+  <body>
+    <h1>Расчет сложного процента</h1>
+    <table>
+      <tr>
+        <th><label for="sum">Сумма вложений</label></th>
+        <th><label for="count">Ставка %</label></th>
+        <th><label for="year">На какой период в годах</label></th>
+        <th>Итого</th>
+      </tr>
+      <tr>
+        <td><input type="number" id="start" /></td>
+        <td><input type="number" id="count" /></td>
+        <td><input type="number" id="year" /></td>
+        <td><div id="end">Тут будет Расчет</div></td>
+      </tr>
+    </table>
+    <div class="error"></div>
+    <button id="btn">Расчет</button>
+    <div id="table_parse">
+      <h2>История расчетов</h2>
+      <table>
+        <tr>
+          <th><label for="sum">Сумма вложений</label></th>
+          <th><label for="count">Ставка %</label></th>
+          <th><label for="year">На какой период в годах</label></th>
+          <th>Итого</th>
+        </tr>
+        <tr class="data">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button id="del">🖋️</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./js/js.js"></script>
+  </body>
+</html>
